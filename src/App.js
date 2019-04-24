@@ -13,7 +13,6 @@ class App extends Component {
     return (
       <div className="App">
           <div className="container">
-            <h1>Hello form app</h1>
             <Navbar/>
             <Switch>
                 <Route path ="/" exact component={ProductList}></Route>
