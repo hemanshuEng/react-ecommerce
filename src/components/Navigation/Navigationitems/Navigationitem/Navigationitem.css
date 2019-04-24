@@ -1,0 +1,44 @@
+.NavigationItem {
+  margin: 0 2.5rem;
+  font-size: 20px;
+}
+
+.NavigationItem a {
+  /* color: #476c7d; */
+  color: #476c7d;
+  text-decoration: none;
+  position: relative;
+}
+.NavigationItem a:hover {
+  color: #476c7d;
+}
+
+.NavigationItem > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #476c7d;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+.NavigationItem > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.CartItem {
+  flex-grow: 1;
+  font-size: 20px;
+  margin:0 5px;
+}
+.CartItem a {
+  float: right;
+  display: block;
+  margin:0;
+  padding: 0;
+}
