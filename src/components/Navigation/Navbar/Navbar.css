@@ -14,4 +14,12 @@
   padding: 0 2rem;
 }
 
+.Logo {
+  margin-left: 0.5rem;
+}
 
+@media (min-width: 769px) {
+  .ToggleButton {
+    display: none;
+  }
+}

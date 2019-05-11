@@ -1,0 +1,35 @@
+.SideDrawer {
+  height: 100vh;
+  background-color: #fff;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 70%;
+  max-width: 300px;
+  z-index: 200;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-out;
+}
+.Open {
+  transform: translateX(0);
+}
+
+.NavigationItems {
+  list-style-type: none;
+  margin-top: 50px;
+  text-align: center;
+}
+.NavigationItems li {
+  margin: 10px;
+}
+.Logo {
+  margin: 20px;
+  text-align: center;
+}
+
+@media (min-width: 769px) {
+  .SideDrawer {
+    display: none;
+  }
+}
