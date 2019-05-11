@@ -16,7 +16,7 @@ const SideDrawer = (props) => {
         </NavLink>
       </div>
       <ul className={classes.NavigationItems}>
-      <Navigationitem link="/" exact>
+      <Navigationitem link="/shop" >
         Shop
       </Navigationitem>
       <Navigationitem link="/about">About</Navigationitem>
