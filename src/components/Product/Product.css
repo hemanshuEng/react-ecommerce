@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css?family=Rasa");
+.Card {
+  width: 100%;
+  background-color: #fff;
+}
+.ImgContainer {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.Img {
+  display: block;
+  max-width: 250px;
+  max-height: 250px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 2rem;
+}
+.Title {
+  color: #00344b;
+  text-align: center;
+  width: 250px;
+  margin: 2rem auto;
+  font-family: "Rasa", serif;
+  font-weight: normal;
+}
