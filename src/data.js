@@ -98,13 +98,13 @@ export const storeProducts = [
 ];
 
 export const detailProduct = {
-  id: 1,
-  title: "Google Pixel - Black",
+  id: 2,
+  title: "Go Explore Small 4 Wheel Hard Suitcase",
   img: "img/product-2.png",
-  price: 10,
-  company: "google",
+  price: 16.99,
+  company: "Go Explore ",
   info:
-    "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
+    "With a sizeable 49L capacity, the Go Explore 4 Wheel Case boasts a hard durable shell for impact protection while remaining lightweight at 2.8kg. 4 easy-glide, wide set corner wheels give 360 control and distribute weight evenly for a lighter feel and better wearing: the central handle has a push button release that is simple to expand and retract. In a sophisticated navy and tan design, you can easily spot your suitcase anywhere. Also comes in a medium and large size.",
   inCart: false,
   count: 0,
   total: 0

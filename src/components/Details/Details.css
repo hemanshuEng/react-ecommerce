@@ -1,0 +1,62 @@
+.Container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: 80vh;
+  margin: 5rem 2rem 2rem 2rem;
+  height: 90%;
+  background-color: #ffffff;
+}
+
+.ImgContainer {
+  margin-top: 2rem;
+  object-fit: cover;
+  height: 400px;
+  overflow: hidden;
+  justify-self: center;
+}
+.Img {
+  display: inline-block;
+  max-width: 400px;
+  max-height: 500px;
+}
+.InfoContainer {
+  font-family: "Rasa", serif;
+  color: #00344b;
+  margin: 2rem;
+}
+.Title {
+  font-size: 2rem;
+  margin: auto;
+}
+.BtnContainer {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+.BackButton ,.CartBtn{
+  color: #00344b;
+  border: 2px solid #414141;
+  width: 10rem;
+  padding: 0.5rem 0.5rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  background: transparent;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  outline: none;
+}
+.BackButton:hover,.CartBtn:hover {
+  background: #00344b;
+  color: white;
+}
+.CartBtnDisable {
+  color: #00344b;
+  border: 2px solid #414141;
+  width: 10rem;
+  padding: auto 0.5rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
