@@ -2,6 +2,13 @@
 .Card {
   width: 100%;
   background-color: #fff;
+  display: grid;
+  grid-template-rows: auto auto 4em;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  border-radius: 2px;
+}
+.Card a {
+  text-decoration: none;
 }
 .ImgContainer {
   width: 100%;
@@ -16,13 +23,51 @@
   max-height: 250px;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 .Title {
   color: #00344b;
   text-align: center;
   width: 250px;
-  margin: 2rem auto;
+  margin: 0.5rem auto;
+  font-size: 1.5rem;
   font-family: "Rasa", serif;
   font-weight: normal;
+}
+.Price {
+  color: #00344b;
+  font-size: 1.5rem;
+  justify-self: center;
+  margin-bottom: 0.5rem;
+}
+.CartBtn {
+  justify-self: center;
+  margin-bottom: 1rem;
+  color: #00344b;
+  border: 2px solid #414141;
+  width: 10rem;
+  padding: auto 0.5rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  background: transparent;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  outline: none;
+}
+.CartBtn:hover {
+  background: #00344b;
+  color: white;
+}
+
+.CartBtnDisable {
+  justify-self: center;
+  margin-bottom: 1rem;
+  color: #00344b;
+  border: 2px solid #414141;
+  width: 10rem;
+  padding: auto 0.5rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  opacity: 0.6;
+  cursor: not-allowed;
 }

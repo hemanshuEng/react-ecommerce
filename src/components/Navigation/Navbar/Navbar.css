@@ -1,10 +1,11 @@
 .Navbar {
-  position: fixed;
+  position: absolute;
   width: 100%;
   top: 20px;
   left: 0;
   background-color: #ffffff;
   height: 60px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
 }
 
 .Navigation {
