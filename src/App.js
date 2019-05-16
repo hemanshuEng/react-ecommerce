@@ -30,7 +30,9 @@ class App extends Component {
       <div className={classes.App}>
         <div className={classes.Container}>
           <Navbar drawerClickHandler={this.drawerToggleClickHandler} />
-          <SideDrawer show={this.state.sideDrawerOpen} />
+          <SideDrawer 
+          show={this.state.sideDrawerOpen}
+          click={this.backdropClickHandler} />
           {this.state.sideDrawerOpen ? (
             <BackDrop click={this.backdropClickHandler} />
           ) : null}

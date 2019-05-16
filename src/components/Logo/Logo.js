@@ -3,7 +3,7 @@ import Aroma from "../../assets/img/logo.png";
 
 const Logo = (props) => {
   return (
-    <div >
+    <div onClick={props.click}>
       <img src={Aroma} alt="logo"/>
     </div>
   )

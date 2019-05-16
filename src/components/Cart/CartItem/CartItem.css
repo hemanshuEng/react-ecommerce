@@ -1,0 +1,34 @@
+.BtnContainer {
+  font-size: 2rem;
+}
+.Btn {
+  background: transparent;
+  border: 1px solid black;
+  font-size: 1.5rem;
+  width: 30px;
+  outline: none;
+  cursor: pointer;
+}
+.BtnSpan {
+  margin: 0 1rem;
+}
+.RemoveBtn {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  width: 30px;
+  outline: none;
+  cursor: pointer;
+}
+@media only screen and (max-width: 649px) {
+    .BtnContainer {
+        font-size: 0.8rem;
+      }
+  .RemoveBtn,
+  .Btn {
+    font-size: 0.8rem;
+  }
+  .BtnSpan {
+    margin: 0 0;
+  }
+}

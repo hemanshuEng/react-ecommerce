@@ -1,0 +1,29 @@
+.Container {
+  margin: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-family: "Rasa", serif;
+  color: #00344b;
+}
+.Btn {
+  color: #00344b;
+  border: 2px solid #414141;
+  width: 10rem;
+  padding: 0.5rem 0.5rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  background: transparent;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  outline: none;
+}
+
+.Btn:hover {
+  background: #00344b;
+  color: white;
+}
+.Container h3 {
+  margin: 0.5rem 0.5rem;
+  text-transform: uppercase;
+}

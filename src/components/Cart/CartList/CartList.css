@@ -1,0 +1,28 @@
+.TableContainer {
+  width: 100%;
+}
+.CartTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  font-family: "Rasa", serif;
+  color: #00344b;
+}
+.CartTable thead {
+  text-transform: uppercase;
+  text-align: center;
+}
+.CartTable th {
+  width: 10%;
+}
+.CartTable td {
+  text-align: center;
+  border-bottom: 1px solid #c3c3c3;
+}
+
+@media only screen and (max-width: 569px) {
+  .CartTable {
+    font-size: 0.7rem;
+  }
+}

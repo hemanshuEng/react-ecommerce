@@ -9,7 +9,10 @@ class ProductProvider extends Component {
     detailProduct: detailProduct,
     cart: [],
     modalOpen: false,
-    modalProduct: detailProduct
+    modalProduct: detailProduct,
+    cartSubTotal: 0,
+    cartTax: 0,
+    cartTotal: 0
   };
   componentDidMount() {
     this.setProduct();
@@ -47,7 +50,7 @@ class ProductProvider extends Component {
         return { products: tempProduct, cart: [...this.state.cart, product] };
       },
       () => {
-        console.log(this.state);
+        this.addTotals();
       }
     );
   };
@@ -63,6 +66,55 @@ class ProductProvider extends Component {
       return { modalOpen: false };
     });
   };
+  increment = id => {
+    console.log("increment mehtod");
+  };
+  decrement = id => {
+    console.log("decrement mehtod");
+  };
+  removeItem = id => {
+    let tempProducts = [...this.state.products];
+    let tempCart = [...this.state.cart];
+    tempCart = tempCart.filter(item => item.id !== id);
+    const index = tempProducts.indexOf(this.getItem(id));
+    let removeProduct = tempProducts[index];
+    removeProduct.inCart = false;
+    removeProduct.count = 0;
+    removeProduct.total = 0;
+    this.setState(
+      () => {
+        return {
+          cart: [...tempCart],
+          product: [...tempProducts]
+        };
+      },
+      () => {
+        this.addTotals();
+      }
+    );
+  };
+  clearCart = () => {
+    this.setState(
+      () => {
+        return { cart: [] };
+      },
+      () => {
+        this.setProduct();
+        this.addTotals();
+      }
+    );
+  };
+  addTotals = () => {
+    let subTotal = 0;
+    this.state.cart.map(item => (subTotal += item.total));
+    const tempTax = subTotal * 0.15;
+    const tax = parseFloat(tempTax.toFixed(2));
+    const total = parseFloat((subTotal + tax).toFixed(2));
+    subTotal = parseFloat(subTotal.toFixed(2));
+    this.setState(() => {
+      return { cartSubTotal: subTotal, cartTax: tax, cartTotal: total };
+    });
+  };
   render() {
     return (
       <ProductContext.Provider
@@ -70,8 +122,12 @@ class ProductProvider extends Component {
           ...this.state,
           handleDetail: this.handleDetail,
           addToCart: this.addToCart,
-          openModal:this.openModal,
-          closeModal:this.closeModal
+          openModal: this.openModal,
+          closeModal: this.closeModal,
+          increment: this.increment,
+          decrement: this.decrement,
+          removeItem: this.removeItem,
+          clearCart: this.clearCart
         }}
       >
         {this.props.children}

@@ -1,6 +1,11 @@
 .PageContainer{
     margin:3rem;
 }
+@media only screen and (max-width:450px){
+    .PageContainer{
+      margin:0.2rem;
+    }
+  }
 .ProductContainer{
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
