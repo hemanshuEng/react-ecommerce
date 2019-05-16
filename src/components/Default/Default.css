@@ -1,0 +1,12 @@
+.Container {
+  margin: 5rem 2rem 2rem 2rem;
+  background-color: #ffffff;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Rasa", serif;
+  color: #00344b;
+  font-style: normal;
+  font-size: 1.5rem;
+}
