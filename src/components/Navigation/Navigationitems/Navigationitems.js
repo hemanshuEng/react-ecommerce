@@ -10,7 +10,6 @@ const navigationItems = () => {
         Shop
       </Navigationitem>
       <Navigationitem link="/about">About</Navigationitem>
-      <Navigationitem link="/gift">Gift</Navigationitem>
       <Navigationitem link="/cart" cart="cart">
         <img src={Cart} alt="cart" className={classes.Cart}/>
       </Navigationitem>
