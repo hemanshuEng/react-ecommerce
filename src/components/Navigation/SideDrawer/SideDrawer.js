@@ -20,7 +20,6 @@ const SideDrawer = (props) => {
         Shop
       </Navigationitem>
       <Navigationitem link="/about" click={props.click}>About</Navigationitem>
-      <Navigationitem link="/gift"click={props.click}>Gift</Navigationitem>
       <Navigationitem link="/cart" click={props.click}>
        Cart
       </Navigationitem>

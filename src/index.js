@@ -6,6 +6,7 @@ import App from "./App";
 import { ProductProvider } from "./context";
 import * as serviceWorker from "./serviceWorker";
 document.body.style.backgroundColor = "#EEEDE7";
+
 ReactDOM.render(
   <ProductProvider>
     <BrowserRouter>

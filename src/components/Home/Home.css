@@ -34,7 +34,7 @@
   font-weight: normal;
   margin: 2rem;
 }
-@media only screen and (max-width:450px){
+@media only screen and (max-width:470px){
   .Title {
     margin:1rem;
     font-size: 2rem;
