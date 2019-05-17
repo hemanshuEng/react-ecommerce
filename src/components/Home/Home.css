@@ -1,0 +1,60 @@
+.Container {
+  margin: 5rem 2rem 2rem 2rem;
+  background: #ffffff;
+  height: 100%;
+  position: relative;
+}
+.Overlay{
+  position: absolute; 
+  top:0;
+  background: rgba(0, 0, 0, 0.4); 
+  z-index: 200;
+  width: 100%;
+  height: 100%;
+}
+.Img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+.Headding {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  z-index: 300;
+}
+.Title {
+  color: #ffffff;
+  font-family: "Rasa", serif;
+  font-size: 3rem;
+  font-weight: normal;
+  margin: 2rem;
+}
+@media only screen and (max-width:450px){
+  .Title {
+    margin:1rem;
+    font-size: 2rem;
+  }
+}
+
+.Btn {
+  margin-bottom: 1rem;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  width: 10rem;
+  padding: 0.5rem 0.5rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  background: transparent;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  outline: none;
+}
+.Btn:hover {
+  background: #ffffff;
+  color: #00344B;
+}
