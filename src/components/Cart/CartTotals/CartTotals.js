@@ -1,7 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Paypal from "./../Paypal/Paypal";
 import classes from "./CartTotals.css";
-const CartTotals = ({ value }) => {
+const CartTotals = ({ value,history }) => {
   const { cartSubTotal, cartTax, cartTotal, clearCart } = value;
   return (
     <div className={classes.Container}>
@@ -19,6 +20,11 @@ const CartTotals = ({ value }) => {
       <h3>
         <strong>TOTAL : </strong>£{cartTotal}
       </h3>
+      <Paypal 
+      total={cartTotal}
+      clearCart={clearCart}
+      history={history}
+      />
     </div>
   );
 };
